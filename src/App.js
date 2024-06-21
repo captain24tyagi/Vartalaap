@@ -2,6 +2,7 @@ import Header from "../src/components/Header";
 import About from "./components/About";
 import Main from "./components/Main";
 import Podcast from "./components/Podcast";
+import Team from "./components/Team";
 
 // bg-gradient-to-t from-[#000000] to-red-500
 
@@ -10,10 +11,11 @@ import Podcast from "./components/Podcast";
 function App() {
   return (
     <div className="h-full bg-gradient-to-r from-[#000000] to-[#dd1a1a]">
-      <Header/>
-      <Main/>
-      <Podcast/>
-      <About/>
+      <Header />
+      <Main />
+      <Podcast />
+      <About />
+      <Team />
     </div>
   );
 }
