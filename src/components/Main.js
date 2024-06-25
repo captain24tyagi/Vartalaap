@@ -20,7 +20,7 @@ export default function Main() {
         }}
         className="text-5xl mx-5 my-10 p-5 rounded-lg text-white text-center font-bold"
       >
-        VARTALAAP PODCAST
+        <span className="text-6xl mx-2 text-yellow-400">वार्तालाप</span> PODCAST
       </motion.h1>
       <div className="flex flex-col justify-center items-center md:flex-row mx-5 my-10 p-5 bg-[#1e2320] rounded-lg">
         <img

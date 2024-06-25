@@ -2,17 +2,8 @@ import React, { useState } from "react";
 // import { motion } from "framer-motion";
 import Guest from "./Guest";
 import { GuestContent } from "../constant";
-import ToggleButton from "@mui/material/ToggleButton";
-import ToggleButtonGroup from "@mui/material/ToggleButtonGroup";
-import { createTheme } from "@mui/material/styles";
 
 export default function About() {
-  const theme = createTheme({
-    palette: {
-      mode: "light",
-    },
-  });
-
   const [toggleState, setToggleState] = useState("s1");
 
   const handleChange = (event) => {

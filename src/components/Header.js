@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function Header() {
   return (
-    <div className="sticky bg-gradient-to-r from-[#000000] to-[#dd1a1a] top-0 flex items-start justify-between max-w-7xl mx-auto z-20 p-5">
+    <div className="sticky bg-gradient-to-r from-[#000000] to-[#dd1a1a] top-0 flex items-start justify-between wfu max-w-7xl mx-auto z-20 p-5">
       <motion.div
         initial={{
           x: -500,
@@ -26,7 +26,7 @@ export default function Header() {
           src="/images/VARTAA.jpg"
           alt="/"
         />
-        <h1 className="text-2xl text-white font-bold mx-4">Vartalaap</h1>
+        <h1 className="text-2xl text-white font-bold mx-4">वार्तालाप</h1>
       </motion.div>
 
       <motion.div

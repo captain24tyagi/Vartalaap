@@ -31,9 +31,9 @@ function Contact() {
         process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
         {
           from_name: form.name,
-          to_name: "Jas krrish",
+          to_name: "Team Vartalaap",
           from_email: form.email,
-          to_email: "jashehz@gmail.com",
+          to_email: "vartalaappodcast@gmail.com",
           subject: form.subject,
           message: form.message,
         },
