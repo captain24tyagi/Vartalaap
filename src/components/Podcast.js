@@ -4,6 +4,7 @@ import Episode from "./Episode";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { PodcastContent } from "../constant";
 
 export default function Podcast() {
   return (
@@ -43,48 +44,15 @@ function Carasouel() {
       <div className="">
         <div className="max-w-fit px-7">
           <Slider {...settings}>
-            <div className="mx-2">
-              <Episode
-                title="Episode 1 ft. Prayasu"
-                image="/images/sarthak bhaiya deklo-20240621T141842Z-001/sarthak bhaiya deklo/Prayasu Thumbnail.png"
-              />
-            </div>
-            <div className="mx-2">
-              <Episode
-                title="Episode 2 ft. Zeeshan"
-                image="/images/sarthak bhaiya deklo-20240621T141842Z-001/sarthak bhaiya deklo/Zeeshan Thumbnail.png"
-              />
-            </div>
-            <div className="mx-2">
-              <Episode
-                title="Episode 3 ft. Janvi"
-                image="/images/sarthak bhaiya deklo-20240621T141842Z-001/sarthak bhaiya deklo/thumbnail.png"
-              />
-            </div>
-            <div className="mx-2">
-              <Episode
-                title="Episode 4 ft. Waseem"
-                image="/images/sarthak bhaiya deklo-20240621T141842Z-001/sarthak bhaiya deklo/thumbnail - Copy.png"
-              />
-            </div>
-            <div className="mx-2">
-              <Episode
-                title="Episode 5 ft. Hrushi"
-                image="/images/sarthak bhaiya deklo-20240621T141842Z-001/sarthak bhaiya deklo/EPISODE 1(1).png"
-              />
-            </div>
-            <div className="mx-2">
-              <Episode
-                title="Episode 6 ft. Paras"
-                image="/images/sarthak bhaiya deklo-20240621T141842Z-001/sarthak bhaiya deklo/thumbnail.png"
-              />
-            </div>
-            <div className="mx-2">
-              <Episode
-                title="Episode 6 ft. Achintya"
-                image="/images/sarthak bhaiya deklo-20240621T141842Z-001/sarthak bhaiya deklo/EPISODE 1.png"
-              />
-            </div>
+            {PodcastContent.map((podcast, index) => (
+              <div key={index} className="mx-2">
+                <Episode
+                  title={podcast.title}
+                  image={podcast.image}
+                  content={podcast.content}
+                />
+              </div>
+            ))}
           </Slider>
         </div>
       </div>

@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { SocialIcon } from "react-social-icons";
 
-export default function TeamCard({ name, role, degree }) {
+export default function TeamCard({ name, role, degree, image }) {
   return (
     <div>
       <article
@@ -18,7 +18,7 @@ export default function TeamCard({ name, role, degree }) {
           whileInView={{ opacity: 1, y: 1 }}
           viewport={{ once: true }}
           className="w-24 h-24 md:w-28 md:h-28 rounded-full object-cover object-top mx-2"
-          src="/images/sarthak bhaiya deklo-20240621T141842Z-001/sarthak bhaiya deklo/IMG_3850.JPG"
+          src={image}
           alt="/"
         />
 
