@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Typewriter } from "react-simple-typewriter";
 
 export default function Main() {
   return (
@@ -18,9 +19,26 @@ export default function Main() {
         transition={{
           duration: 1.5,
         }}
-        className="text-5xl mx-5 my-10 p-5 rounded-lg text-white text-center font-bold"
+        className="text-xl md:text-5xl mx-5 my-10 p-5 rounded-lg text-white text-center font-bold"
       >
-        <span className="text-6xl mx-2 text-yellow-400">वार्तालाप</span> PODCAST
+        <span className="text-xl md:text-6xl mx-2 text-yellow-400">
+          <Typewriter
+            words={[
+              "वार्तालाप",
+              "வர்த்தலாப்",
+              "వర్తలాప్",
+              "વરતાલાપ!",
+              "Vartalaap",
+            ]}
+            loop={0}
+            cursor
+            // cursorStyle="_"
+            typeSpeed={70}
+            deleteSpeed={50}
+            delaySpeed={1500}
+          />
+        </span>{" "}
+        PODCAST
       </motion.h1>
       <div className="flex flex-col justify-center items-center md:flex-row mx-5 my-10 p-5 bg-[#1e2320] rounded-lg">
         <img
@@ -33,15 +51,15 @@ export default function Main() {
           for freshers as well as high school grads who are planning to pursue a
           career in Tech. Unlike other podcasts, it is focused upon calling the
           actual final year, pre-final year techies and graduates as guests and
-          to have a ‘Vartalaap’ or conversation. Vartalaap is focused to provide
-          a right path to the freshers in their initial stages, driving them in
-          right direction, providing them with accurate resources and preventing
-          the wastage of their time. We believe that our podcasts will be
-          insightful for college peeps and will definitely ring out the best in
-          them from all aspects. Learn from Experienced tech nerds. Join us as
-          we navigate the exciting, sometimes chaotic, world of college and tech
-          together. We'll laugh, we'll learn, we'll grow, and who knows, maybe
-          we'll even build the next big thing.🎥
+          to have a &apos;Vartalaap&apos; or conversation. Vartalaap is focused
+          to provide a right path to the freshers in their initial stages,
+          driving them in right direction, providing them with accurate
+          resources and preventing the wastage of their time. We believe that
+          our podcasts will be insightful for college peeps and will definitely
+          ring out the best in them from all aspects. Learn from Experienced
+          tech nerds. Join us as we navigate the exciting, sometimes chaotic,
+          world of college and tech together. We'll laugh, we'll learn, we'll
+          grow, and who knows, maybe we'll even build the next big thing.🎥
         </p>
       </div>
     </div>

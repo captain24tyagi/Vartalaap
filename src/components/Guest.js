@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { SocialIcon } from "react-social-icons";
 
 export default function Guest({ name, image, content }) {
   return (
@@ -25,9 +26,26 @@ export default function Guest({ name, image, content }) {
         <h4 className="md:text-3xl text-md text-center font-light text-yellow-400">
           {name}
         </h4>
-        <p className="uppercase py-5 text-sm md:text-lg text-white">
+        <p className="uppercase py-5 h-fit md:h-[220px] text-sm md:text-lg text-white">
           {content}
         </p>
+      </div>
+      <div className="flex justify-start mt-2">
+        <SocialIcon
+          url="https://x.com/Vartalaap__"
+          fgColor="white"
+          bgColor="transparent"
+        />
+        <SocialIcon
+          url="https://www.linkedin.com/company/vartalaap-podcast/?viewAsMember=true"
+          fgColor="white"
+          bgColor="transparent"
+        />
+        <SocialIcon
+          url="https://www.instagram.com/vartalaap_podcast/"
+          fgColor="white"
+          bgColor="transparent"
+        />
       </div>
     </article>
   );

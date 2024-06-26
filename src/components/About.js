@@ -63,7 +63,12 @@ export default function About() {
         </div>
       </div>
 
-      <div className="w-full mt-5">
+      <div
+        className={`w-full ${
+          toggleState === "s1" &&
+          "flex space-x-5 overflow-x-hidden px-10 snap-x snap-mandatory"
+        }  mt-5`}
+      >
         {toggleState === "s1" ? (
           <div className="w-full flex space-x-5 overflow-x-hidden px-10 snap-x snap-mandatory mt-5">
             {GuestContent.map((guest, index) => (
