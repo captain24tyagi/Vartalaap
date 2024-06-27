@@ -6,7 +6,7 @@ export default function Guest({ name, image, content }) {
   return (
     <article
       className="flex flex-col rounded-lg items-center space-y-5 flex-shrink-0 w-[400px]
-     md:w-[200px] mt-5 md:mt-10 xl:w-[450px] snap-center p-10 md:p-10 bg-[#1e2320] hover:opacity-100 opacity-90 
+     md:w-[200px] mt-5 md:mt-10 xl:w-[450px] snap-center p-10 md:p-10 bg-[#1e2320] drop-shadow-[4px_8px_4px_rgba(226,135,67,0.5)]  hover:opacity-100 opacity-90 
      transition-opacity duration-200 overflow-hidden cursor-pointer text-white"
     >
       <motion.img
@@ -35,6 +35,7 @@ export default function Guest({ name, image, content }) {
           url="https://x.com/Vartalaap__"
           fgColor="white"
           bgColor="transparent"
+          className="hover:text-yellow-400"
         />
         <SocialIcon
           url="https://www.linkedin.com/company/vartalaap-podcast/?viewAsMember=true"

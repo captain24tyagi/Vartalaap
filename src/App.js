@@ -2,6 +2,7 @@ import Header from "../src/components/Header";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Main from "./components/Main";
+import Particle from "./components/Particle";
 import Podcast from "./components/Podcast";
 import Team from "./components/Team";
 
@@ -11,13 +12,16 @@ import Team from "./components/Team";
 
 function App() {
   return (
-    <div className="h-full bg-gradient-to-r from-[#000000] to-[#dd1a1a]">
-      <Header />
-      <Main />
-      <Podcast />
-      <About />
-      <Team />
-      <Contact />
+    <div className="h-full bg-[#111111] relative">
+      <Particle className="absolute w-full h-full top-0 left-0 z-0" />{" "}
+      <div className="z-10 relative">
+        <Header />
+        <Main />
+        <Podcast />
+        <About />
+        <Team />
+        <Contact />
+      </div>
     </div>
   );
 }

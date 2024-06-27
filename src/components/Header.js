@@ -1,10 +1,23 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { SocialIcon } from "react-social-icons";
 import { motion } from "framer-motion";
 
 export default function Header() {
+  const [header, setHeader] = useState("Vartalaap");
+  // वार्तालाप
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setHeader((prevHeader) =>
+        prevHeader === "Vartalaap" ? "वार्तालाप" : "Vartalaap"
+      );
+    }, 800);
+
+    // Cleanup on component unmount
+    return () => clearInterval(intervalId);
+  }, []);
   return (
-    <div className="sticky bg-gradient-to-r from-[#000000] to-[#dd1a1a] top-0 flex items-start justify-between wfu max-w-7xl mx-auto z-20 p-5">
+    <div className="sticky bg-[#000000]/60 backdrop-blur-md top-0 flex items-start justify-between w-full min-w-7xl mx-auto z-20 p-5 md:px-12">
       <motion.div
         initial={{
           x: -500,
@@ -26,7 +39,9 @@ export default function Header() {
           src="/images/VARTAA.jpg"
           alt="/"
         />
-        <h1 className="text-2xl text-white font-bold mx-4">वार्तालाप</h1>
+        <h1 className="md:block hidden text-2xl tracking-wide text-white font-bold mx-4">
+          {header}
+        </h1>
       </motion.div>
 
       <motion.div
