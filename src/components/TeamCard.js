@@ -2,7 +2,15 @@ import React from "react";
 import { motion } from "framer-motion";
 import { SocialIcon } from "react-social-icons";
 
-export default function TeamCard({ name, role, degree, image }) {
+export default function TeamCard({
+  name,
+  role,
+  degree,
+  image,
+  insta,
+  twitter,
+  linkedin,
+}) {
   return (
     <div>
       <article
@@ -22,27 +30,48 @@ export default function TeamCard({ name, role, degree, image }) {
           alt="/"
         />
         <div className="mx-2">
-          <h4 className="md:text-2xl text-md font-light text-yellow-400">
+          <h4 className="md:text-2xl text-md font-light text-red-500">
             {name}
           </h4>
           <p className="font-bold text-xs md:text-xl mt-1">{role}</p>
           <p className="mt-1">{degree}</p>
           <div className="mt-2">
-            <SocialIcon
-              url="https://x.com/Vartalaap__"
-              fgColor="white"
-              bgColor="transparent"
-            />
-            <SocialIcon
-              url="https://www.linkedin.com/company/vartalaap-podcast/?viewAsMember=true"
-              fgColor="white"
-              bgColor="transparent"
-            />
-            <SocialIcon
-              url="https://www.instagram.com/vartalaap_podcast/"
-              fgColor="white"
-              bgColor="transparent"
-            />
+            <a
+              href={`https://x.com/${twitter}`}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <SocialIcon
+                // url={`https://x.com/${twitter}`}
+                fallback="x"
+                fgColor="white"
+                bgColor="transparent"
+              />
+            </a>
+            <a
+              href={`https://www.linkedin.com/in/${linkedin}`}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <SocialIcon
+                // url={`https://www.linkedin.com/in/${linkedin}`}
+                fallback="linkedin"
+                fgColor="white"
+                bgColor="transparent"
+              />
+            </a>
+            <a
+              href={`https://www.instagram.com/${insta}`}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <SocialIcon
+                // url={`https://www.instagram.com/${insta}`}
+                fallback="instagram"
+                fgColor="white"
+                bgColor="transparent"
+              />
+            </a>
           </div>
         </div>
       </article>

@@ -38,7 +38,7 @@ export default function About() {
               checked={toggleState === "s1"}
             />
             <span className="ml-2 tracking-wider text-xs md:text-lg hover:text-yellow-700 transition duration-500 ease-in-out ">
-              Seasion-1
+              Season-1
             </span>
           </label>
           <label

@@ -30,7 +30,7 @@ export default function Guest({
       />
 
       <div className="px-0 md:px-10">
-        <h4 className="md:text-3xl text-md text-center font-light text-yellow-400">
+        <h4 className="md:text-3xl text-md text-center font-light text-red-500">
           {name}
         </h4>
         <p className="uppercase py-5 h-fit md:h-[220px] text-sm md:text-lg text-white">

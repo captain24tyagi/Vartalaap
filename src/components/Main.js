@@ -21,7 +21,7 @@ export default function Main() {
         }}
         className="text-xl md:text-5xl mx-5 my-10 p-5 rounded-lg text-white text-center font-bold"
       >
-        <span className="text-xl md:text-6xl mx-2 text-yellow-400">
+        <span className="text-xl md:text-6xl mx-2 text-red-600">
           <Typewriter
             words={[
               "वार्तालाप",
