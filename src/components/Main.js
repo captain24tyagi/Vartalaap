@@ -40,7 +40,7 @@ export default function Main() {
         </span>{" "}
         PODCAST
       </motion.h1>
-      <div className="flex flex-col justify-center items-center md:flex-row mx-5 my-10 p-5 bg-[#1e2320] drop-shadow-[4px_8px_8px_rgba(226,135,67,0.5)] rounded-lg">
+      <div className="flex flex-col justify-center items-center md:flex-row mx-5 my-10 p-5 bg-[#121212] drop-shadow-[4px_8px_8px_rgba(226,135,67,0.5)] rounded-lg">
         <img
           className="md:h-80 md:w-80 w-[220px] h-[220px] pl-12"
           src="/images/VARTALAAP LOGO.png"

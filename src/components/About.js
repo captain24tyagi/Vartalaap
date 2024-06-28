@@ -77,6 +77,9 @@ export default function About() {
                 name={guest.name}
                 image={guest.image}
                 content={guest.content}
+                insta={guest.insta}
+                linkedin={guest.linkedin}
+                twitter={guest.twitter}
               />
             ))}
           </div>

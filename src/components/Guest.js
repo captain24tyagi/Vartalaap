@@ -2,11 +2,18 @@ import React from "react";
 import { motion } from "framer-motion";
 import { SocialIcon } from "react-social-icons";
 
-export default function Guest({ name, image, content }) {
+export default function Guest({
+  name,
+  image,
+  content,
+  insta,
+  linkedin,
+  twitter,
+}) {
   return (
     <article
       className="flex flex-col rounded-lg items-center space-y-5 flex-shrink-0 w-[400px]
-     md:w-[200px] mt-5 md:mt-10 xl:w-[450px] snap-center p-10 md:p-10 bg-[#1e2320] drop-shadow-[4px_8px_4px_rgba(226,135,67,0.5)]  hover:opacity-100 opacity-90 
+     md:w-[200px] mt-5 md:mt-10 xl:w-[450px] snap-center p-10 md:p-10 bg-[#121212] drop-shadow-[4px_8px_4px_rgba(226,135,67,0.5)]  hover:opacity-100 opacity-90 
      transition-opacity duration-200 overflow-hidden cursor-pointer text-white"
     >
       <motion.img
@@ -31,22 +38,31 @@ export default function Guest({ name, image, content }) {
         </p>
       </div>
       <div className="flex justify-start mt-2">
-        <SocialIcon
-          url="https://x.com/Vartalaap__"
-          fgColor="white"
-          bgColor="transparent"
-          className="hover:text-yellow-400"
-        />
-        <SocialIcon
-          url="https://www.linkedin.com/company/vartalaap-podcast/?viewAsMember=true"
-          fgColor="white"
-          bgColor="transparent"
-        />
-        <SocialIcon
-          url="https://www.instagram.com/vartalaap_podcast/"
-          fgColor="white"
-          bgColor="transparent"
-        />
+        <a href={twitter} target="_blank" rel="noreferrer">
+          <SocialIcon
+            // url="https://x.com/Vartalaap__"
+            fallback="x"
+            fgColor="white"
+            bgColor="transparent"
+            className="hover:text-yellow-400"
+          />
+        </a>
+        <a href={linkedin} target="_blank" rel="noreferrer">
+          <SocialIcon
+            // url="https://www.linkedin.com/company/vartalaap-podcast/?viewAsMember=true"
+            fallback="linkedin"
+            fgColor="white"
+            bgColor="transparent"
+          />
+        </a>
+        <a href={insta} target="_blank" rel="noreferrer">
+          <SocialIcon
+            // url="https://www.instagram.com/vartalaap_podcast/"
+            fallback="instagram"
+            fgColor="white"
+            bgColor="transparent"
+          />
+        </a>
       </div>
     </article>
   );

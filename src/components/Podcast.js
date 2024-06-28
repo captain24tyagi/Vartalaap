@@ -50,6 +50,8 @@ function Carasouel() {
                   title={podcast.title}
                   image={podcast.image}
                   content={podcast.content}
+                  youtube={podcast.youtube}
+                  spotify={podcast.spotify}
                 />
               </div>
             ))}
