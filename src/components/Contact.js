@@ -73,7 +73,7 @@ function Contact() {
       </h1>
 
       <div className="w-full flex space-x-5 overflow-x-hidden px-10 snap-x snap-mandatory mt-5"></div>
-      <div className="bg-[#1e2320]/40 backdrop-blur-md w-fit pl-4 pr-10 rounded-lg">
+      <div className="bg-[#1e2320]/40 backdrop-blur-md w-fit md:pl-4 md:pr-10 pl-8 pr-12 rounded-lg">
         <form
           ref={ref}
           onSubmit={handleSubmit}
