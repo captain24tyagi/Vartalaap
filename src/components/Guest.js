@@ -14,7 +14,7 @@ export default function Guest({
     <article
       className="flex flex-col rounded-lg items-center space-y-5 flex-shrink-0 w-[270px]
      md:w-[200px] mt-5 md:mt-10 xl:w-[450px] snap-center p-10 md:p-10 bg-[#121212] drop-shadow-[4px_8px_4px_rgba(226,135,67,0.5)]  hover:opacity-100 opacity-90 
-     transition-opacity duration-200 overflow-hidden cursor-pointer text-white"
+     transition-opacity duration-200 cursor-pointer text-white"
     >
       <motion.img
         initial={{

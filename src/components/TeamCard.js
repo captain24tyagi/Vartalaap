@@ -34,7 +34,7 @@ export default function TeamCard({
             {name}
           </h4>
           <p className="font-bold text-xs md:text-xl mt-1">{role}</p>
-          <p className="mt-1 md:text-lg text-xs">{degree}</p>
+          <p className="mt-1 md:text-lg text-xs h-6 md:h-12">{degree}</p>
           <div className="mt-2">
             <a
               href={`https://x.com/${twitter}`}

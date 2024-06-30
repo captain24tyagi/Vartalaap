@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-// import { motion } from "framer-motion";
+import Marquee from "react-fast-marquee";
 import Guest from "./Guest";
 import { GuestContent } from "../constant";
 
@@ -70,19 +70,21 @@ export default function About() {
         }  mt-5`}
       >
         {toggleState === "s1" ? (
-          <div className="w-full flex space-x-5 overflow-x-hidden px-10 snap-x snap-mandatory mt-5">
-            {GuestContent.map((guest, index) => (
-              <Guest
-                key={index}
-                name={guest.name}
-                image={guest.image}
-                content={guest.content}
-                insta={guest.insta}
-                linkedin={guest.linkedin}
-                twitter={guest.twitter}
-              />
-            ))}
-          </div>
+          <Marquee>
+            <div className="w-full flex space-x-5 mx-2 mt-5">
+              {GuestContent.map((guest, index) => (
+                <Guest
+                  key={index}
+                  name={guest.name}
+                  image={guest.image}
+                  content={guest.content}
+                  insta={guest.insta}
+                  linkedin={guest.linkedin}
+                  twitter={guest.twitter}
+                />
+              ))}
+            </div>
+          </Marquee>
         ) : (
           <div className="my-6">
             <h1 className="text-center text-xl md:text-4xl font-bold text-white">
