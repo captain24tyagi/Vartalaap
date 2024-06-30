@@ -130,6 +130,6 @@ export const GuestContent = [
     content: `Flutter Developer and B.Tech CSE undergrad from SRM Rmp, who has been a part of more than 3 internships as of now , currently working as a flutter instructor at UET and also has a tech Vlogging channel of his own named “21Coders”.`,
     insta: "https://www.instagram.com/",
     twitter: "https://twitter.com/21coders",
-    linkedin: "https://www.linkedin.com/in/achintya/",
+    linkedin: "https://www.linkedin.com/in/achintya-singh-273663220",
   },
 ];
